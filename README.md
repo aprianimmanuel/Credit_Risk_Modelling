@@ -104,7 +104,8 @@ installment_payment.csv | AMT_PAY | What the client actually paid on previous cr
     - Logistic Regression before and after Tuning
     - Random Forrest Classifier before and after Tuning
     - Decision Tree Classifier before and after Tuning
-5. The Best of Evaluation Metrics from the model we built - `Decision Tree Classifier After Tuning`
+
+### Evaluation Metrics - Decision Tree Classifier After Tuning
 No | Metrics | Score
 -- | ------- | -----
 1 | Accuracy | 0.78
