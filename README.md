@@ -104,9 +104,15 @@ installment_payment.csv | AMT_PAY | What the client actually paid on previous cr
     - Logistic Regression before and after Tuning
     - Random Forrest Classifier before and after Tuning
     - Decision Tree Classifier before and after Tuning
-5. Evaluation Metrics (Confusion Metrix)
-    - Accuracy
-    - Recall
-    - Precision
-    - F1 score
-    - ROC AUC score
+5. The Best of Evaluation Metrics from the model we built - `Decision Tree Classifier After Tuning`
+No | Metrics | Score
+-- | ------- | -----
+1 | Accuracy | 0.78
+2 | Recall | 0.42
+3 | Precision | 0.14
+4 | ROC AUC Score | 0.618
+5 | F1 Score | 0.21
+
+## Conclusion
+1. Decision Tree Classifier with Oversampling Technique Algorithm (SMOTE), that has been tuned, has better result for this dataset than Logistic Regression and Random Forrest in both after tuned or before tuned. 
+2. However, this model __has not been yet recommended__ for entering production stage. This is because the model still has low f1 score. We understand that we need better f1 score value for entering production stage. Still, it is recommended for doing Grid Search Cross Value since we only did Randomized Search Cross Value due to efficiency reason. 
