@@ -105,15 +105,33 @@ installment_payment.csv | AMT_PAY | What the client actually paid on previous cr
     - Random Forrest Classifier before and after Tuning
     - Decision Tree Classifier before and after Tuning
 
-### Evaluation Metrics - Decision Tree Classifier After Tuning
+### Evaluation Metrics in Data Train
+#### 1. Random Forrest Before Tuning
 No | Metrics | Score
 -- | ------- | -----
-1 | Accuracy | 0.78
-2 | Recall | 0.42
-3 | Precision | 0.14
-4 | ROC AUC Score | 0.618
-5 | F1 Score | 0.21
+1 | Accuracy | 0.84
+2 | Recall | 0.16
+3 | Precision | 0.12
+4 | ROC AUC Score | 0.53
+5 | F1 Score | 0.14
+#### 2. Neural Network
+No | Metrics | Score
+-- | ------- | -----
+1 | Accuracy | 0.92
+2 | Recall | 0
+3 | Precision | 0
+4 | ROC AUC Score | 0.50
+5 | F1 Score | 0
+
+### Evaluation Metrics in Data Test
+#### 1. Random Forrest
+No | Metrics | Score
+-- | ------- | -----
+1 | Accuracy | 0.80
+#### 2. Neural Network
+No | Metrics | Score
+-- | ------- | -----
+1 | Accuracy | 0.55
 
 ## Conclusion
-1. Decision Tree Classifier with Oversampling Technique Algorithm (SMOTE), that has been tuned, has better result for this dataset than Logistic Regression and Random Forrest in both after tuned or before tuned. 
-2. However, this model __has not been yet recommended__ for entering production stage. This is because the model still has low f1 score. We understand that we need better f1 score value for entering production stage. Still, it is recommended for doing Grid Search Cross Value since we only did Randomized Search Cross Value due to efficiency reason. 
+1. Neural Network with Oversampling Technique Algorithm (SMOTE) has better accuracy (92%) for the train dataset than Logistic Regression, Random Forrest and Decision Tree in both after tuned or before tuned. However, Evaluation Metrics show that Random Forrest algorithm has better accuracy, which is 80.24% in Test Dataset than Neural Network. 
